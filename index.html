@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="js/vendor/require.js" data-main="js/main"></script>
+        <style type="text/css">
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+        }
+        .sliber{
+            width:200px;
+            height: 300px;
+            border:1px solid #DBFFDA;
+            overflow: hidden;
+        }
+        .sliber-content{
+            position: relative;
+            top: 0px;
+            left:0px;
+            width: 180px;
+            border-right:1px solid #DBFFDA;
+            float: left;
+        }
+        .sliber p{
+            color: #DBFFDA;
+            margin:0px 5px 0px 5px;
+            padding: 5px 0px 5px 0px; 
+        }
+        .sliber-controllers{
+            width: 19px;
+            float: right;
+            background-color: #112B11;
+            height: 100%;
+        }
+        .sliber-upBtn{
+            cursor: pointer;
+            width: 19px;
+            height: 20px;
+            background-color: #B0C0B0;
+            position: relative;
+        }
+        .sliber-downBtn{
+            cursor: pointer;
+            width: 19px;
+            height: 20px;
+            background-color: #B0C0B0;
+            position: relative;
+        }
+        .sliber-handler{
+            height: 260px;
+            width: 19px;
+            position: relative;
+        }
+        .sliber-bar{
+            height: 20px;
+            width: 19px;
+            position: absolute;
+            top:0px;
+            left: 0px;
+            background-color: #788677;
+        }
+        .up_icon{
+            width: 0; 
+            height: 0; 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid #4D4D4D;
+            position: absolute;
+            top: 7px;
+            left: 5px;
+        }
+        .down_icon{
+            width: 0; 
+            height: 0; 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            
+            border-top: 5px solid #4D4D4D;
+            position: absolute;
+            top: 7px;
+            left: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Require JS 測試 : </h1>
+        <div id="wrapper" class="sliber">
+            
+            <!-- 放內容 -->
+            <div class="sliber-content">
+                <p>
+                    火箭隊管理人才再度流失，繼辛奇(Sam Hinkie)轉戰76人隊總管後，另一名籃球事務部副總裁羅薩斯(Gersson Rosas)23日也正式加盟小牛隊，成為球隊新任總管。火箭隊今年在重建首年就繳出亮眼成績後，季後雖然找來霍華德(Dwight Howard)，讓團隊戰力再度提升，但身為幕後功臣的管理階層也因此遭到各隊大力挖角，甚至連同為「德州三雄」的小牛隊也不打算放過補進人才的機會。「我曾跑去跟小尼爾森(Donnie Nelson小牛籃球事務總裁)說，我們的團隊必須要更加聰明些，好讓我們能延續現在在做的事情。我們試著成為各項運動領域中技術最進步的團隊，不只是在NBA中，所以我們要加強的不只是腦力，還有團隊管理和執行能力。」小牛老闆庫班(Mark Cuban)表示。
+                </p>
+            </div>
+            <!-- UI -->
+            <div class="sliber-controllers">
+                <div class="sliber-upBtn">
+                    <div class="up_icon"></div>
+                </div>
+                <div class="sliber-handler">
+                    <div class="sliber-bar"></div>
+                </div>
+                <div class="sliber-downBtn">
+                    <div class="down_icon"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
